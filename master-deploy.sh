@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define variables (replace with your details)
-PHP_APP_URL="https://github.com/your-username/your-php-app.git"
+PHP_APP_URL="https://github.com/Klinzy02/lamp_deployment/tree/main/crud_app"
 
 # Update package lists
 sudo apt update
