@@ -1,0 +1,13 @@
+---
+- name: Deploy LAMP Stack
+  hosts: slave
+  become: true
+  tasks:
+    - name: Copy deployment script
+      copy:
+        src: master-deploy.sh
+        dest: /tmp/master-deploy.sh
+        mode: 0755
+    - name: Run deployment script
+      command: /tmp/master-deploy.sh
+
