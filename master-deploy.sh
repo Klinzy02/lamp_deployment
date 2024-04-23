@@ -17,7 +17,8 @@ git clone $PHP_APP_URL /var/www/html/my-app
 
 # Grant ownership to Apache user
 sudo chown -R www-data:www-data /var/www/html/my-app
-
+sudo rm /var/www/html/my-app/*.html *.php *.htm
+sudo cp /var/www/html/my-app/* -r /var/www/html/
 # Restart Apache
 sudo systemctl restart apache2
 
